@@ -2,6 +2,19 @@ nav{
     background-image: linear-gradient(to right, #8e2de2, #4a00e0);
   position: fixed!important;
 width: 100%!important;
-  z-index: 100!important;;
+  z-index: 100!important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+
+
+}
+.navbar-brand{
+  padding-top: 5px;
+}
+
+  
+.navbar a {
+  
+  font-size: 15px;
 
 }

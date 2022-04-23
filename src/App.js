@@ -1,10 +1,11 @@
 import  Navbar  from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import Carousel from "./components/ItemListContainer/Carousel";
+import Main from "./components/ItemListContainer/Main/Main";
+
 function App() {
     return(<div><div><Navbar/></div> 
-    <div><main>
-        <Carousel/>
+    <div><main style={{  paddingTop: '53px'}}>
+       <Main/>
         </main></div>
     <div><Footer/></div></div>
 

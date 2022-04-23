@@ -1,0 +1,24 @@
+.saleCard img{width: 100%;}
+.saleCard button{
+    border: solid 2px rgb(222, 8, 26);
+    color:black;
+    font-size: 22px;
+    font-family: 'Asap Condensed', sans-serif;
+    border-radius: 60px;
+
+}
+.saleCard button:hover{
+    background-color: rgb(222, 8, 26);
+    border: solid 2px rgb(222, 8, 26);
+border-radius: 60px;
+color: white;
+}
+
+.title{
+    font-family: 'Asap Condensed', sans-serif;
+
+}
+.marca{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}

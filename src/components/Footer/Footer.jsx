@@ -6,8 +6,8 @@ function Footer() {
     <div>
     <footer className="bg-dark text-center text-white mt-5">
  
-      <div className="container p-4 pb-0">
-        <section className="mb-4">
+      <div className="container p-2 pb-0">
+        <section className="mb-3">
           <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
             ><i className="fab fa-facebook-f"></i
           ></a>
@@ -36,7 +36,7 @@ function Footer() {
         </section>
       </div>
     
-      <div className="text-center p-3" id="footer">
+      <div className="text-center p-1" id="footer">
         © 2022 Copyright
         <a className="text-white" href=""></a>
       </div>
