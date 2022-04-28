@@ -1,0 +1,43 @@
+.addProd{
+    background-image: linear-gradient(to left, #8e2de2, #4a00e0);
+    color:  white;
+border-radius: 0px;
+font-family: 'Montserrat', sans-serif;
+font-size: 12px;
+}
+.card a :hover{
+    color: #00F3BB;
+}
+#cont{
+    background-color: #952020;
+}
+h2{
+    font-family: 'Asap Condensed', sans-serif;
+}
+
+.list{
+    margin-top: 30px!important;
+}
+.card img{
+    height: 100%;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: #09f;
+  
+    animation: spin 1s ease infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }

@@ -1,11 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
-import "../ProductList/productlist.css"
+import "./productlist.css"
 
-const ItemCount = ({ onAdd }) => {
+const ItemCount = ({ onAdd, stock}) => {
 
     const initial = 1;
-    const stock = 10;
+   
 
 
     const [count, setCount] = useState(initial);
