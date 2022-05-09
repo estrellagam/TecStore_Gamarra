@@ -2,6 +2,7 @@ import React from 'react'
 import ImgSale1 from '../../../assets/cyber3.jpg'
 import ImgSale2 from '../../../assets/cyber.jpg'
 import './cardSales.css'
+import { Link } from 'react-router-dom'
 
 const CardSale = ({img,cod,marca}) => {
   return (
@@ -15,9 +16,8 @@ const CardSale = ({img,cod,marca}) => {
       
       </div>
  <div className="saleButton">
- <button type="button" class="btn" id={cod}>Ver todos</button>
- 
- 
+ <Link to={`/productos/marca/${marca}`} className="btn" type="button">Ver todos </Link>
+
  </div>
     </div>
  </div>

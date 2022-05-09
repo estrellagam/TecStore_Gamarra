@@ -1,5 +1,5 @@
 .saleCard img{width: 100%;}
-.saleCard button{
+.saleCard .btn{
     border: solid 2px rgb(222, 8, 26);
     color:black;
     font-size: 22px;
@@ -7,7 +7,7 @@
     border-radius: 60px;
 
 }
-.saleCard button:hover{
+.saleCard .btn:hover{
     background-color: rgb(222, 8, 26);
     border: solid 2px rgb(222, 8, 26);
 border-radius: 60px;

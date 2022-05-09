@@ -1,7 +1,7 @@
 .detail{
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-top: 100px;
+    padding-left: 5%;
+    padding-right:5%;
+   padding-top: 39px;
 
 }
 .addProd{
@@ -10,4 +10,7 @@
 border-radius: 0px;
 font-family: 'Montserrat', sans-serif;
 font-size: 12px;
+}
+.imgDetail{
+    padding-top: 5rem!important;
 }

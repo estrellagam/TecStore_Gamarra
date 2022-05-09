@@ -19,10 +19,11 @@ const getItemPromise = new Promise((resolve, reject) => {
  getItemPromise
  .then((res) => {
    setProducto(res);
+   console.log("MMM"+producto);
 }).then(()=>console.log(producto)).catch((err)=>console.log(err));
 
 },[]);
-
+console.log("MMM33"+producto);
 
   return (
     <>

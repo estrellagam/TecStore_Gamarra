@@ -10,8 +10,9 @@ const ProductCard = ({ products }) => {
 
   };
     return (
+  
       <>
-        {products.length > 0 ? (
+        {  products.length > 0 ? (
           products.map((product, index) => (
             <>
               <div className="card my-3 d-flex align-items-center shadow-sm px-0" style={{width: "18rem"}}>
@@ -29,7 +30,8 @@ const ProductCard = ({ products }) => {
         ) : (
           <div class="spinner"></div>
 
-        )}
+        )} 
+        
       </>
     );
   };
