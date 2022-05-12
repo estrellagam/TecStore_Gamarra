@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import "./productlist.css"
-
+import { Link } from 'react-router-dom'
 const ItemCount = ({ onAdd, stock}) => {
 
     const initial = 1;
@@ -27,12 +27,14 @@ const ItemCount = ({ onAdd, stock}) => {
                     disabled={count === stock ? true : null} style={{ width: "2rem" }}>+</button>
             </div>
 
-            <button
-                className="btn addProd mt-2 rounded-bottom py-3" style={{ width: "100%" }}
+            <button className='btnCount'
+               
                 onClick={() => onAdd(count)}
                 disabled={stock === 0 ? true : null}
             >
-                Añadir
+                 <Link to="" onClick={() => onAdd(count)}  
+                   className="btn rounded-bottom addProd" style={{ width: "100%" }}>Añadir a la cesta</Link>
+
             </button>
 
         </div>

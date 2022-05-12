@@ -10,7 +10,44 @@
 border-radius: 0px;
 font-family: 'Montserrat', sans-serif;
 font-size: 12px;
+padding: 10px 0px 10px 0px !important;
+text-decoration: none;
+color: white;
+transition: width 2s, height 4s;
+margin-top: 4px;
+
 }
 .imgDetail{
     padding-top: 5rem!important;
 }
+
+.btnCount{
+    border:none;
+    background-color: transparent;
+}
+p{
+    word-break: break-all;
+
+}
+
+.stock{
+    font-size: 14px;
+}
+.iconDetail{ 
+    color :red!important;
+    font-size: 32px;
+    display: flex;
+    margin-left: -2px;
+  }
+
+  .fontP{
+    display:flex;
+    width: 115px;
+    /* float: left; */
+    margin-left: auto;
+    font-size:12px!important
+  }
+  .fontP p{
+    font-size:12px!important
+
+  }

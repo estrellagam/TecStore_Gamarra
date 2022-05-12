@@ -4,6 +4,7 @@ import "./productlist.css"
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
 import { product } from '../../Data/data';
+import { getByText } from '@testing-library/react';
 
 const ItemListContainer = () => {
   const[products,setProducts]=useState([])
@@ -22,7 +23,16 @@ const ItemListContainer = () => {
  setProducts(product)
   }
   }
-  
+  function getText(){
+    if(categoria){
+      return( <h1 className="mx-5 mb-5 text-center">{categoria.toUpperCase()} </h1> )
+}  else if(marca){
+  return( <h1 className="mx-5 mb-5 text-center">PRODUCTOS {marca} </h1> )
+
+  }else{
+    return( <h1 className="mx-5 mb-5 text-center">NUESTROS PRODUCTOS {categoria} </h1> )
+  }
+  }
   console.log(categoria)
   useEffect(() => {
     const pedido = new Promise((resolve, reject) => {
@@ -53,8 +63,8 @@ const ItemListContainer = () => {
   
     return (
   <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12  list " >
-  <h1 className="mx-5 mb-5 text-center">PRODUCTOS DESTACADOS </h1>
-  <div className="row d-flex justify-content-evenly mx-5 pt-1 mt-4">
+{getText()}
+   <div className="row d-flex justify-content-evenly mx-5 pt-1 mt-4">
   
   <ProductCard products={products}/>
   

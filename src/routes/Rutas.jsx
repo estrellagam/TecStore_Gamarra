@@ -5,6 +5,7 @@ import ItemDetailContainer from '../components/ItemDetailContainer/ItemDetailCon
 import Main from '../components/ItemListContainer/Main/Main'
 import Layout from '../components/Layout/Layout'
 import Carousel from '../components/ItemListContainer/Carousel/Carousel'
+import Cart from '../Cart/Cart'
 const Rutas = () => {
   return (
     <>
@@ -13,6 +14,7 @@ const Rutas = () => {
 <Route path='/' element={<Layout/>}>
 <Route index element={<Main/>}/>
 <Route path='/productos' element={<ItemListContainer/>}/>
+<Route path="/cart"  element={<Cart/>} />
  <Route path='/item-detail/:id' element={<ItemDetailContainer/>}/>
  <Route path='/productos/:categoria' element={<ItemListContainer/>}/>
  <Route path='/productos/marca/:marca' element={<ItemListContainer/>}/>

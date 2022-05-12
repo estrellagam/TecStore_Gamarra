@@ -46,8 +46,8 @@ function Navbar() {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>              <Link to="/productos/laptop" className="dropdown-item">Laptops</Link></li>
-                  <li>              <Link to="/productos/computadora-de-escritorio" className="dropdown-item">Computadoras de Escritorio</Link>
-                    <li>              <Link to="/productos/accesorio" className="dropdown-item">Accesorios</Link>
+                  <li>              <Link to="/productos/computadoras de escritorio" className="dropdown-item">Computadoras de Escritorio</Link>
+                    <li>              <Link to="/productos/accesorios" className="dropdown-item">Accesorios</Link>
                     </li>
                   </li>
                 </ul>

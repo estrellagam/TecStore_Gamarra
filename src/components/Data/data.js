@@ -60,20 +60,20 @@ descripcion:"Ingresa en el mundo de tus películas y series favoritas con una pa
     stock:6,
     img:"https://home.ripley.com.pe/Attachment/WOP_5/2004264003430/2004264003430-2.jpg"
 ,precio:2520.99,descripcion:"IdeaCentre AIO 3i (24)'' es impecable y elegante. Con su soporte simplificado y la pantalla casi sin bordes de 60,45cm (23,8”), se encarga de todo de forma rápida y fluida. Cuenta con procesadores Intel® Core™ de 10.a generación con una memoria y almacenamiento resistentes que también ahorran espacio. Disponible con pantalla táctil y tarjeta gráfica independiente opcionales."
-,categoria:"computadora-de-escritorio"   }
+,categoria:"computadoras de escritorio"   }
 ,{   id:10,
   nombre:"ALL IN ONE LG PC 24V50N-G INTEL",
   marca:"LG",
   stock:3,
   img:"https://www.lg.com/pe/images/computacion/md07504641/gallery/1100_01.jpg"
-,precio:2440.99,descripcion:"LG ALL IN ONE PC, tu mejor aliado para cada labor. Cuenta con 23.8 pulgadas, disco duro de 500GB, 4GB RAM y procesador Intel Core i3 de 10ma generación. El monitor Full HD (1920x1080) de 23.8 pulgadas cumple con los más altos estándares de alta definición para obtener una imagen más clara y detallada." ,categoria:"computadora-de-escritorio"   }
+,precio:2440.99,descripcion:"LG ALL IN ONE PC, tu mejor aliado para cada labor. Cuenta con 23.8 pulgadas, disco duro de 500GB, 4GB RAM y procesador Intel Core i3 de 10ma generación. El monitor Full HD (1920x1080) de 23.8 pulgadas cumple con los más altos estándares de alta definición para obtener una imagen más clara y detallada." ,categoria:"computadoras de escritorio"   }
 
 ,{id:11,
   nombre:"ALL IN ONE HP 24-DF0004LA CELERON-J4025, 23.8'",
   marca:"HP",
   stock:3,
   img:"https://s3.amazonaws.com/imagenes-sellers-mercado-ripley/2022/02/21162515/001_0001_001_0001_c06563771.jpg"
-,precio:1670.99,descripcion:"La HP All-in-One es una computadora que combina el diseño ergonómico, funcionalidad y poder. ¡Adquiérelo en PERCIA!  Equilibrio perfecto entre funcionalidad y poder. Supera los días de mayor actividad gracias al rendimiento de un confiable procesador. Guarda más de lo que amas con el abundante almacenamiento destinado a todas tus fotos y todos tus videos y documentos." ,categoria:"computadora-de-escritorio."}
+,precio:1670.99,descripcion:"La HP All-in-One es una computadora que combina el diseño ergonómico, funcionalidad y poder. ¡Adquiérelo en PERCIA!  Equilibrio perfecto entre funcionalidad y poder. Supera los días de mayor actividad gracias al rendimiento de un confiable procesador. Guarda más de lo que amas con el abundante almacenamiento destinado a todas tus fotos y todos tus videos y documentos." ,categoria:"computadoras de escritorio."}
 
 ,{
   id:12,
@@ -82,7 +82,7 @@ descripcion:"Ingresa en el mundo de tus películas y series favoritas con una pa
     stock:3,
     img:"https://oechsle.vteximg.com.br/arquivos/ids/7072758-1000-1000/image-9d242f91a37b48449e5745d0c519b03d.jpg?v=637795377913230000"
   ,precio:129.99,descripcion:"Tu ratón diario por excelencia. Disfruta de una navegación precisa en cualquier momento con Microsoft Modern Mobile Mouse. Su diseño ligero y de bajo perfil ofrece una navegación precisa, sin el bulto de un ratón tradicional. Delgado y ligero" 
-  ,categoria:"accesorio"}
+  ,categoria:"accesorios"}
   ,{
     id:13,
   nombre:"MOUSE MICROSOFT ARC BLUETOOTH, ROSA (ELG-00037)",
@@ -90,13 +90,13 @@ descripcion:"Ingresa en el mundo de tus películas y series favoritas con una pa
   stock:7,
   img:"https://s3.amazonaws.com/imagenes-sellers-mercado-ripley/2021/12/28101737/001_0000_001.jpg"
 ,precio:309.99,descripcion:"Se ajusta de forma plana para los desplazamientos. Microsoft Arc Mouse va a cualquier lugar, sin el peso ni el bulto de los ratones tradicionales. Simplemente aplánalo y ponlo fácilmente en tu bolsillo de atrás o bolso de viaje. Interacciones intuitivas. Microsoft Arc Mouse te permite desplazarte vertical y horizontalmente para disfrutar de una navegación más fácil e intuitiva. Diseño moderno y delgado. Suave y suave al tacto, está diseñado para que quepa cómodamente en la mano. Enciéndelo o apágalo fácilmente" 
-,categoria:"accesorio"},{
+,categoria:"accesorios"},{
   id:14,
   nombre:"TECLADO LOGITECH G915 TKL LIGHTSPEED  ",
   marca:"LOGITECH",
   stock:7,
   img:"https://resource.logitechg.com/w_1000,c_limit,q_auto,f_auto,dpr_auto/d_transparent.gif/content/dam/gaming/en/products/g915-tkl/g915-tkl-gallery-2-carbon-new.png?v=1"
-,precio: 969.99,descripcion:"Un gran avance en diseño e ingeniería, ahora en combinaciones de colores en blanco y negro. G915 TKL incorpora tecnología inalámbrica LIGHTSPEED de calidad profesional, RGB LIGHTSYNC avanzada e interruptores mecánicos de perfil bajo y alto desempeño. Creado meticulosamente con materiales premium, el G915 TKL tiene un sofisticado diseño de incomparable belleza, resistencia y desempeño. Y ahora con un diseño aún más compacto. G915 TKL. Juega en la siguiente dimensión.",categoria:"accesorio"
+,precio: 969.99,descripcion:"Un gran avance en diseño e ingeniería, ahora en combinaciones de colores en blanco y negro. G915 TKL incorpora tecnología inalámbrica LIGHTSPEED de calidad profesional, RGB LIGHTSYNC avanzada e interruptores mecánicos de perfil bajo y alto desempeño. Creado meticulosamente con materiales premium, el G915 TKL tiene un sofisticado diseño de incomparable belleza, resistencia y desempeño. Y ahora con un diseño aún más compacto. G915 TKL. Juega en la siguiente dimensión.",categoria:"accesorios"
 },{
   id:15,
   nombre:"COOLER GAMER LAPTOP TRUST QUNO ILUMINADO",
@@ -104,6 +104,6 @@ descripcion:"Ingresa en el mundo de tus películas y series favoritas con una pa
   stock:7,
   img:"https://mcegamer.com/wp-content/uploads/2020/11/SOPORTE-DE-REFRIGERACION-6.jpg"
 ,precio: 165.99,descripcion:"Máximo rendimiento -El resistente diseño de aluminio del pedestal se adapta a todos los portátiles de hasta 17,3'. Gracias a sus 5 ventiladores, el pedestal consigue refrigerar incluso los portátiles de mayor tamaño. Mantén refrigerado el portátil para conseguir el mayor rendimiento posible.Míralo desde otro ángulo - El pedestal se puede ajustar en 5 alturas diferentes, hasta un máximo de 190 mm de alto. Como resultado, se puede encontrar la altura y el ángulo de visualización perfectos. No solo el portátil será el centro de todas las miradas. También tú tendrás la mejor visión de tus partidas."
-,categoria:"accesorio"}
+,categoria:"accesorios"}
 
   ]
