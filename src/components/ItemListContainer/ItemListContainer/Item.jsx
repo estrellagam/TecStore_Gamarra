@@ -2,6 +2,8 @@ import React from 'react'
 import "./productlist.css"
 import ItemCount from "./ItemCount"
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { GlobalContext } from '../../../context/GlobalStateContext';
 
 const ProductCard = ({ products }) => {
   const onAdd = (count) => {
@@ -21,6 +23,7 @@ const ProductCard = ({ products }) => {
       <p className="card-text text-center"  key={product.id}>{product.nombre}</p>
       <h6 className="card-title text-center">{product.marca}</h6>
       <h5 className="card-title text-center py-2"><span></span>{product.precio}</h5>
+    
      <center> <Link to={`/item-detail/${product.id}`} className='btn btn-dark my-4'>Ver detalle</Link>
      </center> 
     </div>

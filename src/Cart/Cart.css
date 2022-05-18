@@ -2,3 +2,20 @@
     padding-top: 80px;
     margin-right: 50px;
 }
+.cart{
+    padding-top: 80px;
+
+}
+.cart h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
+}
+.divTable{
+ overflow-x:auto;
+
+}
+.cart h3{
+    padding-left: 35px;
+    padding-top: 23px;
+}

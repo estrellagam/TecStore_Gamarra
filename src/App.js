@@ -3,10 +3,13 @@ import Footer from "./components/Footer/Footer";
 import Main from "./components/ItemListContainer/Main/Main";
 import Rutas from "./routes/Rutas";
 import Layout from "./components/Layout/Layout";
+import GlobalStateContext from "./context/GlobalStateContext";
 function App() {
-    return(<div>
-    <Rutas/>
-    </div>
+    return(
+
+        <GlobalStateContext>
+            <Rutas/>
+        </GlobalStateContext>
 
    
     ) ;

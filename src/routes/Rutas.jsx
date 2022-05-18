@@ -4,7 +4,6 @@ import ItemListContainer from '../components/ItemListContainer/ItemListContainer
 import ItemDetailContainer from '../components/ItemDetailContainer/ItemDetailContainer'
 import Main from '../components/ItemListContainer/Main/Main'
 import Layout from '../components/Layout/Layout'
-import Carousel from '../components/ItemListContainer/Carousel/Carousel'
 import Cart from '../Cart/Cart'
 const Rutas = () => {
   return (

@@ -20,7 +20,7 @@ const ItemCount = ({ onAdd, stock}) => {
         <div className='d-flex row justify-content-evenly w-100 m-0'>
             <div className='d-flex justify-content-around rounded-pill bg-light w-50 py-1' style={{ backgroundColor: "#dedede" }}>
                 <button className='rounded-circle border-0 bg-white' onClick={() => addProduct(-1)}
-                    disabled={count === initial ? true : null} style={{ width: "2rem" }}>-</button>
+                    disabled={count === initial ? true : null} style={ { width: "2rem" }}>-</button>
                 <h6>{count}</h6>
                 <button className='rounded-circle border-0 bg-white'
                     onClick={() => addProduct(+1)}
