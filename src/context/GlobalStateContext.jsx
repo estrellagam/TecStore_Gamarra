@@ -11,10 +11,36 @@ const GlobalStateContext = ({ children }) => {
   const [total, setTotal] = useState(0);
   const [unidades, setUnidades] = useState(0);
 
+
+   
+
+  //local storage
+  useEffect(() => {
+    const carritoLS = JSON.parse(localStorage.getItem('carrito')) ?? []
+  setCarrito(carritoLS)
+  
+  const un = JSON.parse(localStorage.getItem('unidades')) ?? 0
+
+  setCarrito(carritoLS)
+  setUnidades(un)
+
+  }, [])
+
+ useEffect(() => {
+      localStorage.setItem('carrito', JSON.stringify(carrito))
+      localStorage.setItem('unidades', JSON.stringify(unidades))
+
+ 
+    }, [carrito],[unidades])
+
+     
+
   function addItem(product) {
     setCarrito([...carrito, product]);
     setTotal(total + parseInt(product.quantity) * parseInt(product.precio));
     setUnidades(unidades + parseInt(product.quantity));
+
+
   }
 
   function clear() {
