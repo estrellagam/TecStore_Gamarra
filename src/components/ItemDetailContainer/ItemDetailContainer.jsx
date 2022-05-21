@@ -3,32 +3,42 @@ import { useState, useEffect } from 'react'
 import { useParams } from "react-router-dom"
 import ItemDetail from './ItemDetail'
 import { product } from '../Data/data'
+import { collection,getDoc, getDocs } from 'firebase/firestore'
+import {db} from '../../service/firebase';
+import { async } from '@firebase/util'
 const ItemDetailContainer = () => {
  const { id } = useParams()
-  const [producto, setProducto] = useState(null)
+  const [producto, setProducto] = useState([])
+ console.log(producto);
+console.log(id);
 
-  const productofiltrado = product.find((prod)=> prod.id === Number(id))
-  console.log(productofiltrado)
-  useEffect(() => {
-const getItemPromise = new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve(productofiltrado);
-      }, 2000);
+ const getData=async()=>{
+const col = collection(db,"product")
+try {
+  const data= await getDocs(col)
+  const result = data.docs.map(doc=> doc ={ id:doc.id,...doc.data()})
+  console.log(result);
 
- });
- getItemPromise
- .then((res) => {
-   setProducto(res);
-   console.log("MMM"+producto);
-}).then(()=>console.log(producto)).catch((err)=>console.log(err));
+  const searchProducto = result.find((prod)=> prod.id === Number(id))
+  console.log("producto encontraod",searchProducto);
+  setProducto(searchProducto)} 
+catch (error) {
+  console.log(error);
+}
+ }
 
-},[]);
-console.log("MMM33"+producto);
+ useEffect(()=>{
+   getData()
+ },[])
+
+ console.log(producto);
+
+
 
   return (
     <>
-      {product ? <ItemDetail producto={productofiltrado} /> : <h1>Cargando..</h1>}
-    </>
+    {product ? <ItemDetail producto={producto} /> : <h1>Cargando..</h1>}
+  </>
   )
 }
 

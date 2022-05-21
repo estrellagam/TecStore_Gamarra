@@ -5,7 +5,8 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
 import { product } from '../../Data/data';
 import { getByText } from '@testing-library/react';
-
+import {collection,getDocs,query,where} from 'firebase/firestore'
+import {db} from '../../../service/firebase';
 const ItemListContainer = () => {
   const[products,setProducts]=useState([])
   const { marca } = useParams()
@@ -34,8 +35,9 @@ const ItemListContainer = () => {
   }
   }
   console.log(categoria)
+  
   useEffect(() => {
-    const pedido = new Promise((resolve, reject) => {
+    /*const pedido = new Promise((resolve, reject) => {
       setTimeout(() => {
         
   resolve(product);
@@ -57,7 +59,29 @@ const ItemListContainer = () => {
   
     console.log(products); 
   
-    return () => {};
+    return () => {}; */
+
+    const micoleccion= collection(db,"product")
+   let q
+if(categoria){
+  q=query(micoleccion,where('categoria','==',categoria)) 
+} else if(marca){
+ q= query(micoleccion,where('marca','==',marca)) 
+}
+else{
+  q=micoleccion
+
+}
+     getDocs(q)
+     .then((datos)=>{
+         setProducts(datos.docs.map((doc)=>({id:doc.id,...doc.data()})));
+         console.log(datos.docs.map((doc)=>({id:doc.id,...doc.data()})));
+
+     }).finally(()=>{
+         console.log("error");
+     })
+
+
   }, [categoria,marca]);
   
   
