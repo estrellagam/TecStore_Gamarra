@@ -3,7 +3,7 @@ import { useContext } from 'react'
 import { GlobalContext } from '../context/GlobalStateContext'
 import { NavLink,Link } from 'react-router-dom'
 import "./Cart.css"
-import Card from "./Card"
+import Row from "./Row"
 import { product } from '../components/Data/data'
 
 const Cart = () => {
@@ -13,9 +13,9 @@ const Cart = () => {
     <div className="cart col-12" id="">
       <div
         className="row col-12"
-        style={{ float: "center", display: "flex", marginTop: "1%" }}
+        style={{ float: "center", display: "flex", marginTop: "2%" }}
       >
-    <div className='col-md-6'> <h3 className="txt1">Resumen de tu carrito</h3>
+    <div className='col-md-6'> <h4 className="txt1">Resumen de tu carrito</h4>
       </div>   
 
       <>
@@ -53,7 +53,7 @@ const Cart = () => {
               <div className="divTable">   <table className="table m-4 w-75">
               <thead>
                 <tr>
-                  <th scope="col"></th>
+                  <th scope="col">ID</th>
                   <th scope="col">Producto</th>
                   <th scope="col">Precio</th>
                   <th scope="col">Cantidad</th>
@@ -64,7 +64,7 @@ const Cart = () => {
                 <>{
 carrito.map((item, index) => (
   <React.Fragment key={index}>
-    <Card
+    <Row
       img={item.img}
       marca={item.marca}
       descripcion={item.descripcion}
@@ -72,7 +72,7 @@ carrito.map((item, index) => (
       precio={item.precio}
       id={item.id}
       q={item.quantity}
-    ></Card>
+    ></Row>
   </React.Fragment>
 )) 
                 }</>
@@ -132,6 +132,8 @@ carrito.map((item, index) => (
           ""
         )}
       </>
+ 
+      
     </div>
   );
 }

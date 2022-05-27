@@ -34,7 +34,8 @@ descripcion:"Ingresa en el mundo de tus películas y series favoritas con una pa
       stock:11,
       img:"https://www.apple.com/newsroom/images/product/mac/standard/Apple_new-macbookair-wallpaper-screen_11102020_big.jpg.large.jpg"
   ,precio:4620.85,descripcion:"Nuestra notebook más ligera y delgada vuelve completamente renovada por dentro. Gracias al chip M1 de Apple, el CPU es hasta 3.5 veces más rápido y el GPU hasta 5 veces más veloz. El avanzado Neural Engine permite un aprendizaje automático hasta 9 veces superior. La batería es la de mayor duración en una MacBook Air. Y su diseño sin ventilador es supersilencioso. Nunca ha sido tan fácil llevar tanto poder a todos lados."
-  ,categoria:"laptop"  }, {  id:6,
+  ,categoria:"laptop"  }, 
+  {  id:6,
       nombre:"LAPTOP HONOR MAGICBOOK",
       marca:"APPLE",
       stock:2,
@@ -92,7 +93,7 @@ descripcion:"Ingresa en el mundo de tus películas y series favoritas con una pa
 ,precio:309,descripcion:"Se ajusta de forma plana para los desplazamientos. Microsoft Arc Mouse va a cualquier lugar, sin el peso ni el bulto de los ratones tradicionales. Simplemente aplánalo y ponlo fácilmente en tu bolsillo de atrás o bolso de viaje. Interacciones intuitivas. Microsoft Arc Mouse te permite desplazarte vertical y horizontalmente para disfrutar de una navegación más fácil e intuitiva. Diseño moderno y delgado. Suave y suave al tacto, está diseñado para que quepa cómodamente en la mano. Enciéndelo o apágalo fácilmente" 
 ,categoria:"accesorios"},{
   id:14,
-  nombre:"TECLADO LOGITECH G915 TKL LIGHTSPEED  ",
+  nombre:"TECLADO LOGITECH G915 TKL LIGHTSPEED",
   marca:"LOGITECH",
   stock:7,
   img:"https://resource.logitechg.com/w_1000,c_limit,q_auto,f_auto,dpr_auto/d_transparent.gif/content/dam/gaming/en/products/g915-tkl/g915-tkl-gallery-2-carbon-new.png?v=1"

@@ -34,6 +34,20 @@ catch (error) {
  console.log(producto);
 
 
+/*
+  useEffect(() => {
+ const getItemPromise = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(productofiltrado);
+      }, 2000);
+
+ });
+ getItemPromise
+ .then((res) => {
+   setProducto(res);
+   console.log("MMM"+producto);
+}).then(()=>console.log(producto)).catch((err)=>console.log(err));  */
+
 
   return (
     <>

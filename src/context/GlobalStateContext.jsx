@@ -1,16 +1,17 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
 import { product} from '../components/Data/data'
-import { createContext } from 'react'
+import { createContext ,useContext} from 'react'
 import { useLocation } from 'react-router-dom'
 export const GlobalContext = createContext("")
+export const GlobalProvider = () => useContext(GlobalContext)
 
 const GlobalStateContext = ({ children }) => {
 
   const [carrito, setCarrito] = useState([]);
   const [total, setTotal] = useState(0);
   const [unidades, setUnidades] = useState(0);
-
+  const [loading,setLoading] = useState(false)
 
    
 
@@ -20,20 +21,24 @@ const GlobalStateContext = ({ children }) => {
   setCarrito(carritoLS)
   
   const un = JSON.parse(localStorage.getItem('unidades')) ?? 0
+  const tot= JSON.parse(localStorage.getItem('total')) ?? 0
 
   setCarrito(carritoLS)
   setUnidades(un)
+  setTotal(tot)
 
   }, [])
 
  useEffect(() => {
       localStorage.setItem('carrito', JSON.stringify(carrito))
       localStorage.setItem('unidades', JSON.stringify(unidades))
+      localStorage.setItem('total', JSON.stringify(total))
 
  
     }, [carrito],[unidades])
 
-     
+  
+   
 
   function addItem(product) {
     setCarrito([...carrito, product]);
@@ -77,6 +82,7 @@ const GlobalStateContext = ({ children }) => {
         isInCart,
         removeItem,
         carrito,
+        setLoading,
         setCarrito,
         total,
         setTotal,

@@ -3,13 +3,19 @@ import { NavLink } from "react-router-dom";
 import { GlobalContext } from '../context/GlobalStateContext'
 import { useState, useEffect, useContext } from "react";
 
-const Card = ({ img,descripcion,marca, nombre, precio, id, q }) => {
+const Row= ({ img,descripcion,marca, nombre, precio, id, q }) => {
     const {removeItem} = useContext(GlobalContext);
+    let num
+    if (q==1) {
+      num="producto"
+    }else{
+      num="productos"
+    }
   return (
-   
 
-<tr > 
-          <th scope="row">{1}</th>
+
+<tr  style={{ fontSize:"14px"}} > 
+          <th scope="row">#{id}</th>
           <td>{nombre}
         <img src={img} alt="" srcset="" style={{ width: "60px" }}  />
           </td>
@@ -19,12 +25,12 @@ const Card = ({ img,descripcion,marca, nombre, precio, id, q }) => {
           <td>  <button
           className="btn btn-danger"
           onClick={() => removeItem(id, q, precio)}
-          style={{ width: "8rem" }}
+          style={{ width: "8rem", fontSize:"10px"}}
         >
-          Eliminar {q} Producto/s 
+          Eliminar {q} {num} 
         </button></td>
                   </tr>
  
   )
 }
-export default Card
+export default Row

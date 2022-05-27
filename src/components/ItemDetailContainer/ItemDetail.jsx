@@ -15,7 +15,7 @@ const ItemDetail = ({ producto: { id,img, nombre, descripcion, precio, stock, ma
 
   const [visible, setVisible] = useState("block");
 
-  const { product, addItem, clear, isInCart, removeItem, carrito, setCarrito } = useContext(GlobalContext);
+  const { product, addItem, clear, isInCart, removeItem, carrito, setCarrito ,total} = useContext(GlobalContext);
 
 
   const onAdd = (cantidad) => {

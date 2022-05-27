@@ -5,6 +5,7 @@ import ItemDetailContainer from '../components/ItemDetailContainer/ItemDetailCon
 import Main from '../components/ItemListContainer/Main/Main'
 import Layout from '../components/Layout/Layout'
 import Cart from '../Cart/Cart'
+import Checkout from '../Cart/Checkout'
 const Rutas = () => {
   return (
     <>
@@ -13,10 +14,11 @@ const Rutas = () => {
 <Route path='/' element={<Layout/>}>
 <Route index element={<Main/>}/>
 <Route path='/productos' element={<ItemListContainer/>}/>
-<Route path="/cart"  element={<Cart/>} />
  <Route path='/item-detail/:id' element={<ItemDetailContainer/>}/>
  <Route path='/productos/:categoria' element={<ItemListContainer/>}/>
+ <Route path='/cart' element={<Checkout/>}/>
  <Route path='/productos/marca/:marca' element={<ItemListContainer/>}/>
+
 
 </Route>
   </Routes>
