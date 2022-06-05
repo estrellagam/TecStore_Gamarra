@@ -7,6 +7,7 @@ import { GlobalContext } from '../context/GlobalStateContext'
 import { useEffect, useState } from "react";
 import {getDocs, query, where } from 'firebase/firestore'
 import { db } from '../service/firebase';
+import Swal from 'sweetalert2'
 //import { validarTodoLLeno } from "../helpers/helpers";
 
     const Input = ({
@@ -71,7 +72,6 @@ import { db } from '../service/firebase';
          alert("COMPLETA TODOS LOS CAMPOS")
           return;
         }
-        alert("SU ORDEN SE GUARDO")
         fetchGenerateTicket({ datos: formulario });
         clear();
       };

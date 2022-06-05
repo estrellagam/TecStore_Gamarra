@@ -19,7 +19,6 @@ const ItemDetail = ({ producto: { id,img, nombre, descripcion, precio, stock, ma
 
 
   const onAdd = (cantidad) => {
-    alert(`Agregaste a tu carrito cantidad` +cantidad);
     setCantidad(cantidad)
    setVisible("none")
    let is = isInCart(id);

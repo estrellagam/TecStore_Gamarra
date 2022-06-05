@@ -7,7 +7,6 @@ import { GlobalContext } from '../../../context/GlobalStateContext';
 
 const ProductCard = ({ products }) => {
   const onAdd = (count) => {
-    alert(`Agregaste ${count} productos`);
   
 
   };

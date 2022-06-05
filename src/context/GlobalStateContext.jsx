@@ -12,6 +12,8 @@ const GlobalStateContext = ({ children }) => {
   const [total, setTotal] = useState(0);
   const [unidades, setUnidades] = useState(0);
   const [loading,setLoading] = useState(false)
+  const[ticket,setTicket]= useState("");
+
 
    
 
@@ -87,7 +89,8 @@ const GlobalStateContext = ({ children }) => {
         total,
         setTotal,
         unidades,
-        setUnidades,}}>
+        setUnidades,ticket,
+        setTicket}}>
             {children}
         </GlobalContext.Provider>
 
