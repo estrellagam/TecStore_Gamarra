@@ -7,8 +7,8 @@ import { GlobalContext } from '../context/GlobalStateContext'
 import { useEffect, useState } from "react";
 import {getDocs, query, where } from 'firebase/firestore'
 import { db } from '../service/firebase';
+import "./Cart.css"
 import Swal from 'sweetalert2'
-//import { validarTodoLLeno } from "../helpers/helpers";
 
     const Input = ({
         className,
@@ -38,13 +38,13 @@ import Swal from 'sweetalert2'
           </div>
         );
       };
-      const validarTodoLLeno = (campos) => {
+      const validar = (campos) => {
         return campos.some((campo) => campo === "")
       }
       const Formulario = () => {
         const {  clear , total, carrito} = useContext(GlobalContext);
 
-        const { fetchGenerateTicket } = useFirebase();
+        const { fetchTicket } = useFirebase();
       
         const [formulario, setFormulario] = useState({
           buyer: {
@@ -68,11 +68,16 @@ import Swal from 'sweetalert2'
     
       const onSubmit = (e) => {
         e.preventDefault();
-        if (validarTodoLLeno([email, nombre, apellido, telefono])) {
-         alert("COMPLETA TODOS LOS CAMPOS")
+        if (validar([email, nombre, apellido, telefono])) {
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Debes completar todos los campos',
+          })
+
           return;
         }
-        fetchGenerateTicket({ datos: formulario });
+        fetchTicket({ datos: formulario });
         clear();
       };
 
@@ -97,7 +102,7 @@ import Swal from 'sweetalert2'
       };
     
       return (
-        <form onSubmit={onSubmit} className="container border">
+        <form onSubmit={onSubmit} className="container border my-4">
           <h3 className="text-uppercase text-center my-4">datos recipiente</h3>
           {Object.keys(formulario.buyer).map((key,index) => (
             <Input
@@ -119,11 +124,11 @@ import Swal from 'sweetalert2'
               <p className="fs-4 text-uppercase">total</p>
             </div>
             <div className="col-12 col-lg-3">
-              <p className="fs-4">${total}</p>
+              <p className="fs-4">S./{total}</p>
             </div>
             <button
               type="submit"
-              className="btn btn-primary text-uppercase w-100 my-4"
+              className="btn terminarCompra text-uppercase w-100 my-4"
             >
               terminar la compra
             </button>

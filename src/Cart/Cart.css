@@ -19,3 +19,11 @@
     padding-left: 35px;
     padding-top: 23px;
 }
+form{
+    font-family: 'Montserrat', sans-serif;
+}
+form .terminarCompra{
+    margin-top: 13px;
+    background-image: linear-gradient(to left, #8e2de2, #4a00e0);
+    color: white
+}

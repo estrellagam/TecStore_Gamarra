@@ -12,7 +12,7 @@ const useFirebase = () => {
   const [producto, setProducto] = useState({});
   const {setLoading} = useContext(GlobalContext);
 
-  const fetchGenerateTicket =  async ({datos}) => {
+  const fetchTicket =  async ({datos}) => {
     setLoading(true)
     try {
         const col = collection(db,"ordenes")
@@ -39,7 +39,7 @@ const useFirebase = () => {
   return {
     productos,
     producto,
- fetchGenerateTicket,
+ fetchTicket,
  
   };
 };

@@ -19,9 +19,9 @@ const Row= ({ img,descripcion,marca, nombre, precio, id, q }) => {
           <td>{nombre}
         <img src={img} alt="" srcset="" style={{ width: "60px" }}  />
           </td>
-          <td>{precio}</td>
+          <td>S./{precio}</td>
           <td>{q}</td>
-          <td>{precio*q}</td>
+          <td>S/.{precio*q}</td>
           <td>  <button
           className="btn btn-danger"
           onClick={() => removeItem(id, q, precio)}

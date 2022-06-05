@@ -21,7 +21,7 @@ const ProductCard = ({ products }) => {
     <div className="card-body m-0 p-0 w-100">
       <p className="card-text text-center"  key={product.id}>{product.nombre}</p>
       <h6 className="card-title text-center">{product.marca}</h6>
-      <h5 className="card-title text-center py-2"><span></span>{product.precio}</h5>
+      <h5 className="card-title text-center py-2"><span>S./</span>{product.precio}</h5>
     
      <center> <Link to={`/item-detail/${product.id}`} className='btn btn-dark my-4'>Ver detalle</Link>
      </center> 

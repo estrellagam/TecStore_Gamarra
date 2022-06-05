@@ -3,6 +3,7 @@ import { useState,useEffect } from 'react'
 import { product} from '../components/Data/data'
 import { createContext ,useContext} from 'react'
 import { useLocation } from 'react-router-dom'
+import Swal from 'sweetalert2'
 export const GlobalContext = createContext("")
 export const GlobalProvider = () => useContext(GlobalContext)
 
@@ -62,7 +63,11 @@ const GlobalStateContext = ({ children }) => {
     carrito.forEach((element) => {
       if (element.id === p) {
         is = true;
-        window.alert("Este producto ya se encuentra en su carrito.");
+        Swal.fire({
+          icon: 'warning',
+          title: 'Oops...',
+          text: 'Este producto ya se encuentra en su carrito.',
+        })
       }
     });
 
